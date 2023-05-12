@@ -13,6 +13,7 @@ binary_tree_suite(void)
 
 	s = suite_create("binary-tree");
 	tc_core = tcase_create("core");
+	tcase_set_timeout(tc_core, 10);
 
 	tcase_add_test(tc_core, BENCH_BINARY_TREE);
 
